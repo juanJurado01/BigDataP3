@@ -6,24 +6,19 @@ table = dynamodb.create_table(
     TableName='Animals',
     KeySchema=[
         {
-            'AttributeName': '',
+            'AttributeName': 'index',
             'KeyType': 'HASH'  #Partition key
         },
         {
-            'AttributeName': 'index',
+            'AttributeName': 'info',
             'KeyType': 'RANGE'  #Sort key
         }
     ],
     AttributeDefinitions=[
         {
-            'AttributeName': 'year',
+            'AttributeName': 'route',
             'AttributeType': 'N'
         },
-        {
-            'AttributeName': 'title',
-            'AttributeType': 'S'
-        },
-
     ],
     ProvisionedThroughput={
         'ReadCapacityUnits': 10,
