@@ -1,5 +1,5 @@
 
-from get_animals import get_animals
+from punto1.get_animals import get_animals
 import requests
 import unittest
 
@@ -12,7 +12,5 @@ class GetAnimals(unittest.TestCase):
         f2 = open("file.html", "r", encoding="utf8")
         self.assertEqual(len(get_animals(f2))>0, True)
         f2.close()
-
-
-if __name__ == '__main__':
+if __name__ =="__main__":
     unittest.main()
