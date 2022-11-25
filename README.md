@@ -1,7 +1,7 @@
 # BigDataP3
 
 En este proyecto está mi proyecto del corte 3 de big data
-Bryan Garavito y Juan Jurado 
+*Bryan Garavito y Juan Jurado 
 ---
 
 * En la carpeta punto1 está la invocación del punto 1 del parcial. En él se descargan las imágenes de https://misanimales.com/ . 
