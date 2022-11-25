@@ -3,7 +3,7 @@ import boto3
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
 table = dynamodb.create_table(
-    TableName='Animals',
+    TableName='Animals2',
     KeySchema=[
         {
             'AttributeName': 'indice',
