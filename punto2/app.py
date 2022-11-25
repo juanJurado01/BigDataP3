@@ -30,6 +30,5 @@ def handler(event,context):
     bucketName= event['Records'][0]['s3']['bucket']['name']
     fileName=event['Records'][0]['s3']['object']['key']
     item=detect_labels(fileName, bucketName)
-    save_to_database(item)
     response = save_to_database(item)
     return response
